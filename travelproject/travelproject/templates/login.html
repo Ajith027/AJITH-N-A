@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .contact{
+         position: absolute;
+    top: 25%;
+    left: 35%;
+
+    width: 183px;
+    height: 100px;
+    padding:30px 80px 240px ;
+    background: rgba(0,0,0,0.6);
+    }
+    input {
+  height: 20px;
+  flex: 0 0 200px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+
+
+}
+ .btn{
+
+    margin-left:55px;
+    color:red;
+ }
+ h1{
+    margin-left:55px;
+ }
+
+    </style>
+</head>
+<body>
+
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/827ced4c-062a-4dce-b568-40e8ebe9f87d/d25w0pz-7c81c8c0-17e5-4de3-94b4-e6e7bac5c043.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyN2NlZDRjLTA2MmEtNGRjZS1iNTY4LTQwZThlYmU5Zjg3ZFwvZDI1dzBwei03YzgxYzhjMC0xN2U1LTRkZTMtOTRiNC1lNmU3YmFjNWMwNDMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-RfwW21PQLE7SiCKLNKNYja2hK8U5AWOR-L9a-XHNDY" width="100%">
+    <form class="contact" action="login" method="post">
+        {% csrf_token %}
+        <div>
+            <h1 ><u><b></b>login</b></u></h1><br>
+            <input type="text" name="username" placeholder="Enter username"><br>
+            <input type="password" name="password" placeholder="password"><br>
+            <input type="submit" >
+        </div>
+        {% for msg in messages %}
+<h2 style="text-align:center;color:red">{{msg}}</h2>
+{% endfor %}
+    </form>
+
+</body>
+</html>

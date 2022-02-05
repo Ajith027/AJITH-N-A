@@ -1,0 +1,47 @@
+.banner{
+ width:100%;
+ background-color:#FFD700;
+ opacity: 0.78;
+ height:110px;
+
+}
+.banner-text{
+
+postion:absolute;
+text-align:center;
+padding-top:20px;
+
+color:#000000;
+font-family: Times New Roman, Times, serif;
+}
+
+.editform{
+width:50%;
+height:50%;
+margin-left:220px;
+margin-top:100px;
+padding-left:150px;
+
+
+}
+.editcont{
+  box-shadow: 9px 15px 18px grey;
+  border:0.1px solid black;
+
+  background-color:#0c7eb3;
+ }
+
+.editform1{
+padding-left:10px;
+height: 400px;
+padding:90px 40px 40px 130px ;
+
+}
+
+.deleform{
+margin:14%;
+padding-left:220px
+}
+.btn{
+
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="editform">
+
+    <div class="container" >
+        <div class="editcont">
+            <form method="post" class="editform1">
+                {% csrf_token%}
+                {{form.as_p}}
+                <button type="submit">confirm</button>
+            </form>
+
+        </div>
+
+
+     </div>
+
+</div>
+
+
+{% endblock %}
